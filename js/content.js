@@ -76,8 +76,7 @@ window.SITE = {
     { name: "C", cluster: "hw", level: 4, note: { en: "Hardware-near programming: pointers, memory, bit manipulation and microcontroller code.", de: "Hardwarenahe Programmierung: Zeiger, Speicher, Bitmanipulation und Mikrocontroller-Code." } },
     { name: { en: "Mechatronics", de: "Mechatronik" }, cluster: "hw", level: 3, note: { en: "Eight-month industrial internship with machines, sensors and drives.", de: "Achtmonatiges Industriepraktikum mit Maschinen, Sensorik und Antrieben." } },
     { name: { en: "Digital systems", de: "Digitaltechnik" }, cluster: "hw", level: 2, note: { en: "Logic, circuits and computer architecture, in progress at HAW.", de: "Logik, Schaltungen und Rechnerarchitektur, laufend an der HAW." } },
-    { name: { en: "Electrical basics", de: "E-Technik Grundlagen" }, cluster: "hw", level: 2, note: { en: "Fundamentals of electrical engineering, in progress at HAW.", de: "Grundlagen der Elektrotechnik, laufend an der HAW." } },
-
+    { name: { en: "Measurement & sensors", de: "Mess- & Sensortechnik" }, cluster: "hw", level: 3, note: { en: "Sensors, measurement and data acquisition, including Python-based data collection.", de: "Sensorik, Messtechnik und Datenerfassung, inklusive Datenerfassung mit Python." } },
     { name: "Java", cluster: "sw", level: 5, note: { en: "Main language; University of Helsinki Java Programming I & II.", de: "Hauptsprache; Java Programming I & II der University of Helsinki." } },
     { name: "Python", cluster: "sw", level: 4, note: { en: "Scripting and automation; ReDi School course.", de: "Skripte und Automatisierung; Kurs an der ReDi School." } },
     { name: "JavaScript", cluster: "sw", level: 3, note: { en: "Interactive front-ends; used at HiiT Plc and ReDi School.", de: "Interaktive Frontends; eingesetzt bei HiiT Plc und an der ReDi School." } },
