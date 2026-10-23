@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marvel C. Chinedozie · Hardware & Software Engineer</title>
+<meta name="description" content="Marvel C. Chinedozie, hardware & software engineer and computer engineering student at HAW Hamburg.">
+<meta property="og:title" content="Marvel C. Chinedozie · Hardware & Software Engineer">
+<meta property="og:description" content="Computer engineering student at HAW Hamburg: hardware, software and cloud.">
+<meta property="og:image" content="assets/profile.jpg">
+<meta name="theme-color" content="#060910">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"></div>
+<canvas id="cosmos" aria-hidden="true"></canvas>
+
+<div class="page">
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="ic" id="monogram">MC</span><span class="brand-name" id="brandName">Marvel C. Chinedozie</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#certificates" data-i18n="nav.certs">Certificates</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="de" aria-pressed="false">DE</button>
+        </div>
+        <button class="btn icon-btn" id="openTerm" type="button" aria-label="Open terminal"><span class="mono">&gt;_</span></button>
+        <a class="btn primary" data-cv href="#" data-i18n="cv.short">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <span class="status"><span class="dot"></span><span data-bind="status"></span></span>
+          <h1 id="heroName">Marvel<br><em>Chinedozie</em></h1>
+          <p class="role"><span data-bind="role"></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="degree" data-bind="degree"></p>
+          <p class="tagline" data-bind="tagline"></p>
+          <div class="cta">
+            <a class="btn primary" data-cv href="#" data-i18n="cv.download">Download CV</a>
+            <a class="btn" href="#projects" data-i18n="cta.projects">View projects</a>
+            <a class="btn" href="#contact" data-i18n="cta.contact">Get in touch</a>
+          </div>
+          <ul class="social-row" id="socialRow"></ul>
+        </div>
+
+        <aside class="sheet reveal" aria-label="Profile datasheet">
+          <div class="sheet-head"><span data-i18n="sheet.title">Datasheet</span><span id="partNo">MC-2026 · Rev A</span></div>
+          <div class="portrait">
+            <div class="ring"><img id="photo" src="assets/profile.jpg" alt="Portrait of Marvel C. Chinedozie" width="320" height="320"></div>
+            <div class="portrait-meta">
+              <span class="pm-name" id="sheetName"></span>
+              <span class="pm-loc" id="sheetLoc"></span>
+            </div>
+          </div>
+          <dl id="sheetRows"></dl>
+          <div class="sheet-foot" aria-hidden="true">
+            <span class="foot-label">SIG</span>
+            <svg viewBox="0 0 300 30" preserveAspectRatio="none"><path id="trace" fill="none" stroke="var(--copper)" stroke-width="1.4" d=""/></svg>
+          </div>
+        </aside>
+      </div>
+      <div class="wrap">
+        <ul class="stats reveal" id="stats"></ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+          <h2 data-i18n-html="about.title">From the <em>register</em> to the cloud</h2>
+          <div class="about-text" id="aboutText"></div>
+        </div>
+        <div class="disciplines reveal" id="disciplines"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+        <h2 data-i18n-html="skills.title">A constellation of <em>tools</em></h2>
+        <p class="lede" data-i18n="skills.lede">Each star is a skill, grouped around the discipline it belongs to. Dashed lines show where the disciplines meet. Select a star to see how deep it goes.</p>
+        <div class="const-grid reveal">
+          <div class="const-stage"><svg id="constellation" viewBox="-90 0 1080 470" role="group" aria-label="Skills constellation"></svg></div>
+          <div class="sk-panel" aria-live="polite">
+            <span class="k" id="skCluster"></span>
+            <h3 id="skName">—</h3>
+            <div class="level" id="skLevel"></div>
+            <span class="level-label" id="skLevelLabel"></span>
+            <p id="skNote"></p>
+            <span class="k" style="margin-top:auto" data-i18n="skills.linked">Linked to</span>
+            <p id="skLinks"></p>
+          </div>
+        </div>
+        <div class="chips" id="chips"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="proj-head">
+          <div>
+            <p class="eyebrow" data-i18n="projects.eyebrow">Projects</p>
+            <h2 data-i18n-html="projects.title">Things I have <em>built</em></h2>
+            <p class="lede" data-i18n="projects.lede">Hand-picked work first, followed by my latest public repositories, loaded live from GitHub.</p>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+        </div>
+        <div class="proj-grid" id="projGrid"></div>
+
+        <div class="gh-head">
+          <div class="gh-title">
+            <b>gh</b>
+            <div>
+              <h3 data-i18n="gh.title">Live from GitHub</h3>
+              <a id="ghProfile" href="#" target="_blank" rel="noopener"></a>
+            </div>
+          </div>
+          <ul class="gh-stats" id="ghStats"></ul>
+        </div>
+        <div class="proj-grid" id="ghGrid"><p class="gh-msg" data-i18n="gh.loading">Loading repositories…</p></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="exp.eyebrow">Experience</p>
+        <h2 data-i18n-html="exp.title">Career &amp; <em>education</em></h2>
+        <div class="filters tl-filters" id="tlFilters" role="group" aria-label="Filter timeline"></div>
+        <ol class="tl" id="timeline"></ol>
+        <div class="cv-strip reveal">
+          <p data-i18n="exp.cvnote">The full record is in my CV.</p>
+          <a class="btn primary" data-cv href="#" data-i18n="cv.pdf">Download CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES + LANGUAGES + INTERESTS -->
+    <section id="certificates">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="certs.eyebrow">Certificates</p>
+        <h2 data-i18n-html="certs.title">Always <em>learning</em></h2>
+        <div class="cert-grid" id="certGrid"></div>
+
+        <div class="extra-grid">
+          <div class="reveal">
+            <h3 class="sub" data-i18n="lang.title">Languages</h3>
+            <ul class="langs" id="langList"></ul>
+          </div>
+          <div class="reveal">
+            <h3 class="sub" data-i18n="int.title">Interests</h3>
+            <ul class="interests" id="interestList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n-html="contact.title">Let's build <em>something</em></h2>
+        <p class="lede" data-i18n="contact.lede">A project, a collaboration or a job opportunity? Email is the fastest way to reach me.</p>
+        <div class="contact-grid">
+          <div>
+            <div class="mailbox">
+              <code id="emailText"></code>
+              <button class="btn" id="copyEmail" type="button" data-i18n="contact.copy">Copy</button>
+              <a class="btn primary" id="mailLink" href="#" data-i18n="contact.mail">Email me</a>
+            </div>
+            <ul class="link-list" id="linkList"></ul>
+          </div>
+          <form class="msg" id="msgForm" novalidate>
+            <div class="field"><label for="fName" data-i18n="form.name">Your name</label><input id="fName" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="fEmail" data-i18n="form.email">Your email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="fMsg" data-i18n="form.msg">Message</label><textarea id="fMsg" name="message" required data-i18n-ph="form.ph"></textarea></div>
+            <button class="btn primary" type="submit" style="justify-self:start" data-i18n="form.send">Write email</button>
+            <p class="form-note" id="formNote" data-i18n="form.note">Opens your email app with the message filled in.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span id="footName">© 2026 Marvel C. Chinedozie</span>
+      <span><span data-i18n="foot.press">Press</span> <kbd>`</kbd> <span data-i18n="foot.term">for the terminal</span> · <span id="localTime"></span></span>
+    </div>
+  </footer>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+<div class="term-wrap" id="term" hidden role="dialog" aria-modal="true" aria-label="Terminal">
+  <div class="term">
+    <div class="term-bar"><i></i><i></i><i></i><span id="termTitle">guest@marvel: ~</span><button type="button" id="closeTerm" aria-label="Close terminal">esc ✕</button></div>
+    <div class="term-out" id="termOut"></div>
+    <label class="term-in"><span id="prompt">guest@marvel:~$</span><input id="termInput" autocomplete="off" spellcheck="false" aria-label="Terminal command"></label>
+  </div>
+</div>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
