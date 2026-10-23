@@ -23,7 +23,7 @@ window.SITE = {
   socials: [
     { label: "LinkedIn",  short: "in", handle: "/in/das-marvels", url: "https://www.linkedin.com/in/das-marvels" },
     { label: "GitHub",    short: "gh", handle: "@Marvelchinedozie", url: "https://github.com/Marvelchinedozie" },
-    { label: "Instagram", short: "ig", handle: "@das-marvels",    url: "https://www.instagram.com/das-marvels" },
+    { label: "Instagram", short: "ig", handle: "@das_marvels",    url: "https://www.instagram.com/das-marvels" },
     { label: "X",         short: "x",  handle: "", url: "" },
     { label: "YouTube",   short: "yt", handle: "", url: "" }
   ],
