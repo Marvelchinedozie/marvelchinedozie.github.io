@@ -103,6 +103,10 @@ window.SITE = {
   // Hand-picked projects (shown before the live GitHub repos). Add your own:
   // { title: "...", category: "hardware|software|cloud", year: 2026, summary: {en,de}, tags: [...], url: "https://..." }
   projects: [
+    { title: "PM2-Mediathek", category: "software", year: 2026,
+      summary: { en: "Media library management system with a Swing GUI: select a customer, lend out CDs, DVDs and video games, and handle returns in a separate view. Built for Programmiermethodik 2 at HAW Hamburg.",
+                 de: "Mediathek-Verwaltung mit Swing-Oberfläche: Kunden auswählen, CDs, DVDs und Videospiele ausleihen und Rückgaben in einer eigenen Ansicht abwickeln. Entstanden im Kurs Programmiermethodik 2 an der HAW Hamburg." },
+      tags: ["Java", "Swing", "JUnit", "OOP"], url: "https://github.com/Marvelchinedozie/mediathek-java" },
     { title: { en: "This website", de: "Diese Website" }, category: "software", year: 2026,
       summary: { en: "Personal site with a live neural-cosmos background, a skills constellation, an EN/DE switch and a built-in terminal.",
                  de: "Persönliche Website mit Neural-Cosmos-Hintergrund, Skill-Konstellation, EN/DE-Umschaltung und eingebautem Terminal." },
