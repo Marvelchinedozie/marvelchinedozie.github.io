@@ -17,13 +17,13 @@ window.SITE = {
   location: "Hamburg, Germany",
   timezone: "Europe/Berlin",
   email: "marvelouschinedu12@gmail.com",
-  cv: "Marvel_Chiednzoie_Lebenslauf.pdf",   // the PDF in the same folder as index.html
+  cv: "Marvel_Chinedozie_Lebenslauf.pdf",   // the PDF in the same folder as index.html
   githubUser: "Marvelchinedozie",                // live repositories are loaded from this account
 
   socials: [
     { label: "LinkedIn",  short: "in", handle: "/in/das-marvels", url: "https://www.linkedin.com/in/das-marvels" },
     { label: "GitHub",    short: "gh", handle: "@Marvelchinedozie", url: "https://github.com/Marvelchinedozie" },
-    { label: "Instagram", short: "ig", handle: "@das_marvels",    url: "https://www.instagram.com/das-marvels" },
+    { label: "Instagram", short: "ig", handle: "@das_marvels",    url: "https://www.instagram.com/das_marvels" },
     { label: "X",         short: "x",  handle: "", url: "" },
     { label: "YouTube",   short: "yt", handle: "", url: "" }
   ],
