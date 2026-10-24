@@ -508,15 +508,15 @@ function cosmos() {
   if (!ctx) return;
   let W = 0, H = 0, nodes = [], dust = [], pulses = [], mouse = { x: -9999, y: -9999 }, lastSpawn = 0;
   const LINK = 135, MOUSE_R = 190;
-  const COPPER = "217,160,102", ION = "159,185,255", STAR = "233,237,246";
+  const COPPER = "59,123,255", ION = "205,45,52", STAR = "225,231,240";
   function seed() {
-    const n = Math.round(Math.min(170, Math.max(50, W * H / 9500)));
+    const n = Math.round(Math.min(110, Math.max(40, W * H / 15000)));
     nodes = Array.from({ length: n }, () => ({
       x: Math.random() * W, y: Math.random() * H,
       vx: (Math.random() - .5) * .22, vy: (Math.random() - .5) * .22,
-      r: Math.random() * 1.3 + .5, hub: Math.random() < .07, ph: Math.random() * 6.28
+      r: Math.random() * 1.3 + .5, hub: Math.random() < .035, ph: Math.random() * 6.28
     }));
-    dust = Array.from({ length: Math.round(W * H / 2600) }, () => ({ x: Math.random() * W, y: Math.random() * H, a: Math.random() * .45 + .08, s: Math.random() * 1.5 + .3 }));
+    dust = Array.from({ length: Math.round(W * H / 4200) }, () => ({ x: Math.random() * W, y: Math.random() * H, a: Math.random() * .45 + .08, s: Math.random() * 1.5 + .3 }));
     pulses = [];
   }
   function resize() {
@@ -559,7 +559,7 @@ function cosmos() {
         const mx = (a.x + b.x) / 2 - mouse.x, my = (a.y + b.y) / 2 - mouse.y;
         const near = Math.max(0, 1 - Math.hypot(mx, my) / MOUSE_R);
         const base = 1 - d / LINK;
-        ctx.strokeStyle = near > 0 ? `rgba(${COPPER},${base * (.18 + near * .6)})` : `rgba(${ION},${base * .16})`;
+        ctx.strokeStyle = near > 0 ? `rgba(${ION},${base * (.16 + near * .4)})` : `rgba(${ION},${base * .28})`;
         ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
       }
     }
@@ -574,7 +574,7 @@ function cosmos() {
       ctx.beginPath(); ctx.arc(n.x, n.y, n.hub ? n.r + 1 : n.r, 0, 6.283); ctx.fill();
     }
     if (!reduceMotion) {
-      if (time - lastSpawn > 260 && pulses.length < 14) {
+      if (time - lastSpawn > 900 && pulses.length < 4) {
         lastSpawn = time;
         const a = nodes[(Math.random() * nodes.length) | 0];
         let best = null, bd = LINK;
