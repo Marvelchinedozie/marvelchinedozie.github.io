@@ -116,7 +116,7 @@ window.SITE = {
        { period: "09.2026 — ", periodEnd: { en: "Present", de: "Aktuell" }, kind: { en: "Work", de: "Praxis" }, now: true,
       role: { en: "Working Student, Hardware & Software Engineer", de: "Werkstudent Hardware- & Software-Engineer" },
       org: "S&I Sachverständige Ingenieure GmbH · Hamburg",
-      points: { en: ["Modernizing data infrasturcture and improving the way organizational information is structured and managed.",
+      points: { en: ["Modernizing data infrastructure and improving the way organizational information is structured and managed.",
                      "Engineered Python-based tools to automate data workflows and facilitate seamless integration with centralized systems across company infrastructure."],
                 de: ["Maßgebliche Mitwirkung an der Modernisierung der Dateninfrastruktur sowie an der Optimierung der Strukturierung und Verwaltung unternehmensinterner Informationen.",
                      "Entwicklung Python-basierter Lösungen zur Automatisierung von Datenprozessen und zur nahtlosen Integration in zentrale Systemlandschaften."] } },
