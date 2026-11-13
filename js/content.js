@@ -44,12 +44,12 @@ window.SITE = {
     en: [
       "I'm a computer engineering student at HAW Hamburg, working my way across the whole stack: from registers and circuits to applications and cloud infrastructure.",
       "Before university I built web front-ends as an intern at HiiT Plc in Lagos, then spent eight months as a mechatronics intern at Peter Schilling Metallprofile in Hamburg, where software meets motors, sensors and real machines.",
-      "That mix is what I enjoy most: understanding a problem on the hardware side and solving it cleanly in software. Today I put that into practice as a working student in hardware and software, alongside my studies, while working towards the AWS Solutions Architect Associate certification."
+      "That mix is what I enjoy most: understanding a problem on the hardware side and solving it cleanly in software. Today I put that into practice as a working student in hardware and software at Energiezentrale Nord GmbH and S&I Sachverständige Ingenieure GmbH, alongside my studies, while working towards the AWS Solutions Architect Associate certification."
     ],
     de: [
       "Ich studiere Informatik Technische Systeme an der HAW Hamburg und arbeite mich durch den gesamten Stack: von Registern und Schaltungen bis zu Anwendungen und Cloud-Infrastruktur.",
       "Vor dem Studium habe ich als Praktikant bei HiiT Plc in Lagos Web-Frontends entwickelt und danach acht Monate als Mechatroniker-Praktikant bei Peter Schilling Metallprofile in Hamburg gearbeitet, wo Software auf Motoren, Sensoren und echte Maschinen trifft.",
-      "Genau diese Mischung macht mir am meisten Spaß: ein Problem auf der Hardware-Seite verstehen und es sauber in Software lösen. Heute setze ich das neben dem Studium als Werkstudent im Bereich Hardware und Software um und bereite mich zusätzlich auf die Zertifizierung AWS Solutions Architect Associate vor."
+      "Genau diese Mischung macht mir am meisten Spaß: ein Problem auf der Hardware-Seite verstehen und es sauber in Software lösen. Heute setze ich das neben dem Studium als Werkstudent im Bereich Hardware und Software bei der Energiezentrale Nord GmbH und der S&I Sachverständige Ingenieure GmbH um und bereite mich zusätzlich auf die Zertifizierung AWS Solutions Architect Associate vor."
     ]
   },
 
