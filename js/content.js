@@ -113,7 +113,7 @@ window.SITE = {
   ],
 
   experience: [
-       { period: "10.2026 — ", periodEnd: { en: "Present", de: "Aktuell" }, kind: { en: "Work", de: "Praxis" }, now: true,
+       { period: "09.2026 — ", periodEnd: { en: "Present", de: "Aktuell" }, kind: { en: "Work", de: "Praxis" }, now: true,
       role: { en: "Working Student, Hardware & Software Engineer", de: "Werkstudent Hardware- & Software-Engineer" },
       org: "S&I Sachverständige Ingenieure GmbH · Hamburg",
       points: { en: ["Designed the database architecture and migrated company data from Excel to MySQL.",
