@@ -44,7 +44,7 @@ window.SITE = {
     en: [
       "I'm a computer engineering student at HAW Hamburg, working my way across the whole stack: from registers and circuits to applications and cloud infrastructure.",
       "Before university I built web front-ends as an intern at HiiT Plc in Lekki, Lagos. then spent eight months as a mechatronics intern at Peter Schilling Metallprofile in Hamburg, where software meets motors, sensors and real machines.",
-      "That mix is what I enjoy most: understanding a problem on the hardware side and solving it cleanly in software. Today I put that into practice as a working student in hardware and software at Energiezentrale Nord GmbH and S&I Sachverständige Ingenieure GmbH, alongside my studies, while working towards the AWS Solutions Architect Associate certification."
+      "That mix is what I enjoy most: understanding a problem on the hardware side and solving it cleanly in software. Today I put that into practice as a working student in hardware and software engineering at Energiezentrale Nord GmbH and S&I Sachverständige Ingenieure GmbH, alongside my studies, while working towards the AWS Solutions Architect Associate certification."
     ],
     de: [
       "Ich studiere Informatik Technische Systeme an der HAW Hamburg und arbeite mich durch den gesamten Stack: von Registern und Schaltungen bis zu Anwendungen und Cloud-Infrastruktur.",
